@@ -33,5 +33,14 @@ public class RepeatAdditionQuiz{
 	public int getNumber2(){
 		return number2;
 	}
-
+	
+	//create a mutator of answerList to judge whether the user enter the same answer before
+	void setAnswerList(int answer){
+		for(int i : answerList){
+			if(i == answer){
+				System.out.println("You are already entered " + answer);
+				break;
+			}
+		}
+	}
 }
